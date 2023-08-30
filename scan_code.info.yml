@@ -1,0 +1,6 @@
+name: Scan code - Barcode
+type: module
+description: Allow users to scan information from a barcode image.
+package: Custom
+configure: scan_code.admin_config
+core_version_requirement: ^8 || ^9 || ^10

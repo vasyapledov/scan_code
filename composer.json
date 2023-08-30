@@ -1,0 +1,68 @@
+{
+    "name": "drupal/code_scan",
+    "type": "drupal-module",
+    "description": "Scan code module provides Drupal different scan features for barcode.",
+    "keywords": ["Drupal", "scan_code"],
+    "license": "GPL-2.0+",
+    "homepage": "https://www.drupal.org/project/scan_code",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/scan_code",
+        "source": "https://git.drupalcode.org/project/scan_code"
+    },
+    "repositories": {
+        "quagga": {
+            "type": "package",
+            "package": {
+                "name": "quagga/quagga",
+                "version": "1.8.2",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "quagga"
+                },
+                "dist": {
+                    "url": "https://cdn.jsdelivr.net/npm/@ericblade/quagga2/dist/quagga.min.js",
+                    "type": "file"
+                },
+                "require": {
+                    "composer/installers": "^1"
+                }
+            }
+        },
+        "webrtc": {
+            "type": "package",
+            "package": {
+                "name": "webrtc/webrtc",
+                "version": "0.1",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "webrtc"
+                },
+                "dist": {
+                    "url": "https://webrtc.github.io/adapter/adapter-latest.js",
+                    "type": "file"
+                }
+            },
+            "require": {
+                "composer/installers": "^1"
+            }
+        }
+    },
+    "require": {
+        "quagga/quagga": "^1.8.2",
+        "webrtc/webrtc": "^0.1.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+        },
+        "sort-packages": true
+    },
+    "extra": {
+        "installer-paths": {
+            "web/libraries/{$name}": [
+                "type:drupal-library"
+            ]
+        }
+    }
+}

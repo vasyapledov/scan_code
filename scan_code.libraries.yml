@@ -1,0 +1,20 @@
+scancode_library:
+  css:
+    layout:
+      css/scan_code.css: {}
+  js:
+    js/scan_code.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - scan_code/quagga
+quagga:
+  remote: https://github.com/ericblade/quagga2
+  version: 1.8.2
+  license:
+    name: MIT
+    url: https://github.com/ericblade/quagga2/blob/master/LICENSE
+    gpl-compatible: yes
+  js:
+    /libraries/webrtc/adapter-latest.js: {}
+    /libraries/quagga/quagga.min.js: {}
