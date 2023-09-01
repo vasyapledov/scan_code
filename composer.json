@@ -50,7 +50,8 @@
     },
     "require": {
         "quagga/quagga": "^1.8.2",
-        "webrtc/webrtc": "^0.1.0"
+        "webrtc/webrtc": "^0.1.0",
+        "drupal/token": "^1.5"
     },
     "config": {
         "allow-plugins": {
