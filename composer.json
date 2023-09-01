@@ -46,6 +46,10 @@
             "require": {
                 "composer/installers": "^1"
             }
+        },
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
         }
     },
     "require": {
